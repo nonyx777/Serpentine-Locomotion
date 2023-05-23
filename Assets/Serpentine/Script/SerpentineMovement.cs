@@ -52,8 +52,12 @@ public class SerpentineMovement : MonoBehaviour
 
     void rotationController()
     {
-        if(wallCheck() && (wallLookAngle < maxWallLookAngle))
-            transform.Rotate(Vector3.right * -90);
+        if(wallCheck() && (wallLookAngle < maxWallLookAngle)){
+            Vector3 surfaceNormal = frontWallHit.normal;
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation; 
+            // transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 4f);
+            transform.rotation = targetRotation;
+        }
 
         transform.Rotate(Vector3.up * horizontal * rotation_speed * Time.deltaTime);
     }
@@ -62,8 +66,12 @@ public class SerpentineMovement : MonoBehaviour
     {
         if(Physics.SphereCast(transform.position + Vector3.up * 5, radius, -transform.up, out hit_down, distance, groundMask)){
             transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
+            Vector3 surfaceNormal = hit_down.normal;
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
+            transform.rotation = targetRotation;
         }
-
+        // else if(Physics.SphereCast(transform.position + Vector3.up * 5, radius, -transform.up, out hit_down, distance, wallMask))
+        //     transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
     }
 
     //climbing related functions
@@ -88,7 +96,7 @@ public class SerpentineMovement : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position + transform.forward * wallDetectionLength, wallRadius);
 
-        Gizmos.color = Color.green;
-        Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, 0, transform.position.z + wallDetectionLength));
+        // Gizmos.color = Color.blue;
+        // Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, 0, transform.position.z + wallDetectionLength));
     }
 }
