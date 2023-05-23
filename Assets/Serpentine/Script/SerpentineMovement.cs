@@ -37,8 +37,7 @@ public class SerpentineMovement : MonoBehaviour
         inputMapper();
         movementController();
         rotationController();
-        surfaceAllign();
-        wallCheck();
+        surfaceAllign();            
     }
 
     void inputMapper()
@@ -53,6 +52,9 @@ public class SerpentineMovement : MonoBehaviour
 
     void rotationController()
     {
+        if(wallCheck() && (wallLookAngle < maxWallLookAngle))
+            transform.Rotate(Vector3.right * -90);
+
         transform.Rotate(Vector3.up * horizontal * rotation_speed * Time.deltaTime);
     }
 
@@ -65,10 +67,11 @@ public class SerpentineMovement : MonoBehaviour
     }
 
     //climbing related functions
-    void wallCheck()
+    bool wallCheck()
     {
         wallFront = Physics.SphereCast(transform.position, wallRadius, transform.forward, out frontWallHit, wallDetectionLength, wallMask);
         wallLookAngle = Vector3.Angle(transform.forward, -frontWallHit.normal);
+        return wallFront;
     }
 
     //ray visualization
