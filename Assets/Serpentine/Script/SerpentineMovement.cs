@@ -34,6 +34,7 @@ public class SerpentineMovement : MonoBehaviour
         //calling functions
         inputMapper();
         movementController();
+        wallCheck();
         rotationController();
         surfaceAllign();            
     }

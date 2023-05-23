@@ -143,13 +143,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6540b65713f1786d6857a73c80bd17af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement_speed: 4
-  rotation_speed: 200
-  radius: 0.35
-  distance: 0.1
-  detectableMask:
+  movement_speed: 2
+  rotation_speed: 160
+  radius: 0.2
+  distance: 0.35
+  groundMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
+  wallDetectionLength: 0.03
+  wallRadius: 0.38
+  wallFront: 0
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 72
 --- !u!114 &1377529831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,4 +170,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body_prefab: {fileID: 7160827836936172196, guid: e366e5b2e83742a72940ee6a0e708f8d,
     type: 3}
-  gap: 5
+  gap: 10
