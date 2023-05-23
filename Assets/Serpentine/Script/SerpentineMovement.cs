@@ -23,8 +23,6 @@ public class SerpentineMovement : MonoBehaviour
     [Header("climbing parameters")]
     [SerializeField] private float wallDetectionLength;
     [SerializeField] private float wallRadius;
-    [SerializeField] private float maxWallLookAngle;
-    [SerializeField] private float wallLookAngle;
     private RaycastHit frontWallHit;
     [SerializeField] private bool wallFront;
     [SerializeField] private LayerMask wallMask;
@@ -52,7 +50,7 @@ public class SerpentineMovement : MonoBehaviour
 
     void rotationController()
     {
-        if(wallCheck() && (wallLookAngle < maxWallLookAngle)){
+        if(wallCheck()){
             Vector3 surfaceNormal = frontWallHit.normal;
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation; 
             // transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 4f);
@@ -70,15 +68,12 @@ public class SerpentineMovement : MonoBehaviour
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
             transform.rotation = targetRotation;
         }
-        // else if(Physics.SphereCast(transform.position + Vector3.up * 5, radius, -transform.up, out hit_down, distance, wallMask))
-        //     transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
     }
 
     //climbing related functions
     bool wallCheck()
     {
         wallFront = Physics.SphereCast(transform.position, wallRadius, transform.forward, out frontWallHit, wallDetectionLength, wallMask);
-        wallLookAngle = Vector3.Angle(transform.forward, -frontWallHit.normal);
         return wallFront;
     }
 
