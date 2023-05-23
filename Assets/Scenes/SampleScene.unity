@@ -710,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
       propertyPath: distance
-      value: 10
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
       propertyPath: wallRadius
@@ -726,15 +726,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
       propertyPath: wallMask.m_Bits
-      value: 64
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
       propertyPath: maxWallLookAngle
-      value: 90
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
       propertyPath: groundMask.m_Bits
-      value: 8
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
       propertyPath: wallDetectionLength
@@ -757,7 +757,7 @@ PrefabInstance:
     - target: {fileID: 7957346470974027752, guid: 13a9a031133a96505a346e657da9e83d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.693
       objectReference: {fileID: 0}
     - target: {fileID: 7957346470974027752, guid: 13a9a031133a96505a346e657da9e83d,
         type: 3}

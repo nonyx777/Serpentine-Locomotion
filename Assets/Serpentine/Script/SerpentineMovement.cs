@@ -64,8 +64,8 @@ public class SerpentineMovement : MonoBehaviour
 
     void surfaceAllign()
     {
-        if(Physics.SphereCast(transform.position + Vector3.up * 5, radius, -transform.up, out hit_down, distance, groundMask)){
-            transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
+        if(Physics.SphereCast(transform.position, radius, -transform.up, out hit_down, distance, groundMask)){
+            // transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
             Vector3 surfaceNormal = hit_down.normal;
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
             transform.rotation = targetRotation;
@@ -87,16 +87,16 @@ public class SerpentineMovement : MonoBehaviour
     {
         //ground allignment gizmo
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(hit_down.point, radius);
+        Gizmos.DrawWireSphere(transform.position + (-transform.up * distance), radius);
 
         Gizmos.color = Color.green;
-        Gizmos.DrawRay(hit_down.point, hit_down.normal);
+        Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, -distance, transform.position.z));
 
         //wall detection gizmo
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position + transform.forward * wallDetectionLength, wallRadius);
 
         // Gizmos.color = Color.blue;
-        // Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, 0, transform.position.z + wallDetectionLength));
+        Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, 0, wallDetectionLength));
     }
 }
