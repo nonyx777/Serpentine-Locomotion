@@ -16,8 +16,19 @@ public class SerpentineMovement : MonoBehaviour
     [Header("surface allignment parameters")]
     [SerializeField] private float radius;
     [SerializeField] private float distance;
-    [SerializeField] private LayerMask detectableMask;
+    [SerializeField] private LayerMask groundMask;
     RaycastHit hit_down;
+
+    //climbing parameters
+    [Header("climbing parameters")]
+    [SerializeField] private float wallDetectionLength;
+    [SerializeField] private float wallRadius;
+    [SerializeField] private float maxWallLookAngle;
+    [SerializeField] private float wallLookAngle;
+    private RaycastHit frontWallHit;
+    [SerializeField] private bool wallFront;
+    [SerializeField] private LayerMask wallMask;
+
 
     // Update is called once per frame
     void Update()
@@ -27,6 +38,7 @@ public class SerpentineMovement : MonoBehaviour
         movementController();
         rotationController();
         surfaceAllign();
+        wallCheck();
     }
 
     void inputMapper()
@@ -46,19 +58,34 @@ public class SerpentineMovement : MonoBehaviour
 
     void surfaceAllign()
     {
-        if(Physics.SphereCast(transform.position + Vector3.up * 5, radius, -transform.up, out hit_down, distance, detectableMask)){
+        if(Physics.SphereCast(transform.position + Vector3.up * 5, radius, -transform.up, out hit_down, distance, groundMask)){
             transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
         }
 
     }
 
+    //climbing related functions
+    void wallCheck()
+    {
+        wallFront = Physics.SphereCast(transform.position, wallRadius, transform.forward, out frontWallHit, wallDetectionLength, wallMask);
+        wallLookAngle = Vector3.Angle(transform.forward, -frontWallHit.normal);
+    }
+
     //ray visualization
     void OnDrawGizmos()
     {
+        //ground allignment gizmo
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(hit_down.point, radius);
 
         Gizmos.color = Color.green;
         Gizmos.DrawRay(hit_down.point, hit_down.normal);
+
+        //wall detection gizmo
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position + transform.forward * wallDetectionLength, wallRadius);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, 0, transform.position.z + wallDetectionLength));
     }
 }
