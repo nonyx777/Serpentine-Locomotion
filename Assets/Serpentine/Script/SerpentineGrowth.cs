@@ -14,7 +14,6 @@ public class SerpentineGrowth : MonoBehaviour
     void Update()
     {
         //calling functions
-        growPressed();
         if(growPressed()) growBody();
         bodyFollow();
 
@@ -22,7 +21,7 @@ public class SerpentineGrowth : MonoBehaviour
 
     bool growPressed()
     {
-        return Input.GetKeyDown(KeyCode.P);
+        return Input.GetKeyDown(KeyCode.P) || Input.GetButtonDown("OButton");
     }
 
     void growBody()
