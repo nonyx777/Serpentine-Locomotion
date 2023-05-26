@@ -25,18 +25,15 @@ public class SerpentineMovement : MonoBehaviour
     [SerializeField] private float wallRadius;
     private RaycastHit frontWallHit;
     [SerializeField] private bool wallFront;
-    [SerializeField] private LayerMask wallMask;
-
 
     // Update is called once per frame
     void Update()
     {
         //calling functions
         inputMapper();
-        movementController();
-        wallCheck();
         rotationController();
         surfaceAllign();            
+        movementController();
     }
 
     void inputMapper()
@@ -63,8 +60,8 @@ public class SerpentineMovement : MonoBehaviour
 
     void surfaceAllign()
     {
-        if(Physics.SphereCast(transform.position, radius, -transform.up, out hit_down, distance, groundMask)){
             // transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, hit_down.point.y, Time.deltaTime * 4f), transform.position.z);
+        if(Physics.SphereCast(transform.position, radius, -transform.up, out hit_down, distance, groundMask)){
             Vector3 surfaceNormal = hit_down.normal;
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal) * transform.rotation;
             transform.rotation = targetRotation;
@@ -74,7 +71,7 @@ public class SerpentineMovement : MonoBehaviour
     //climbing related functions
     bool wallCheck()
     {
-        wallFront = Physics.SphereCast(transform.position, wallRadius, transform.forward, out frontWallHit, wallDetectionLength, wallMask);
+        wallFront = Physics.SphereCast(transform.position, wallRadius, transform.forward, out frontWallHit, wallDetectionLength, groundMask);
         return wallFront;
     }
 

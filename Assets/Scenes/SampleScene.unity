@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 131366087}
   - component: {fileID: 131366086}
   - component: {fileID: 131366085}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 229308506}
   - component: {fileID: 229308505}
   - component: {fileID: 229308504}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229308502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.59, y: -4.29, z: 6.65}
+  m_LocalPosition: {x: 4.540247, y: -1.7388675, z: 11.492521}
   m_LocalScale: {x: 7.3469706, y: 7.3469706, z: 7.3469706}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 283044604}
   - component: {fileID: 283044603}
   - component: {fileID: 283044602}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 297879503}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: BALL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297879502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0497534, y: 2.5511324, z: 4.842521}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 306809588}
   - component: {fileID: 306809587}
   - component: {fileID: 306809586}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,8 +630,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.043802515, y: -0.16113432, z: 0.0071583935, w: 0.9859341}
-  m_LocalPosition: {x: 12.10626, y: 8.594961, z: -21.547337}
+  m_LocalRotation: {x: 0.04498355, y: -0.0074929297, z: 0.00033741267, w: 0.99895966}
+  m_LocalPosition: {x: 2.92, y: 6.39, z: -20.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 397265760}
   - component: {fileID: 397265759}
   - component: {fileID: 397265758}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397265756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.83, y: -4.29, z: -6.51}
+  m_LocalPosition: {x: 9.780247, y: -1.7388675, z: -1.667479}
   m_LocalScale: {x: 7.3469706, y: 7.3469706, z: 7.3469706}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 411815398}
   - component: {fileID: 411815397}
   - component: {fileID: 411815396}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411815394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.08, y: -4.11, z: 0.43}
+  m_LocalPosition: {x: 17.030247, y: -1.5588677, z: 5.272521}
   m_LocalScale: {x: 4.692451, y: 4.692451, z: 4.692451}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 531697153}
   - component: {fileID: 531697152}
   - component: {fileID: 531697151}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 733798192}
   - component: {fileID: 733798191}
   - component: {fileID: 733798190}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,7 +1234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 901119601}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: RODE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1276,7 +1276,7 @@ GameObject:
   - component: {fileID: 1026566592}
   - component: {fileID: 1026566591}
   - component: {fileID: 1026566590}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1374,7 +1374,7 @@ GameObject:
   - component: {fileID: 1060762688}
   - component: {fileID: 1060762687}
   - component: {fileID: 1060762686}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060762684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.93, y: 3.44, z: 0.43}
+  m_LocalPosition: {x: 1.8802464, y: 5.9911327, z: 5.272521}
   m_LocalScale: {x: 4.692451, y: 4.692451, z: 4.692451}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1468,7 +1468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145246964}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: BOX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1504,7 +1504,7 @@ GameObject:
   - component: {fileID: 1145792945}
   - component: {fileID: 1145792944}
   - component: {fileID: 1145792943}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1519,7 +1519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145792941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.87, y: -3.32, z: -8.55}
+  m_LocalPosition: {x: -1.1797534, y: -0.7688675, z: -3.707479}
   m_LocalScale: {x: 7.3469706, y: 7.3469706, z: 7.3469706}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1601,7 +1601,7 @@ GameObject:
   - component: {fileID: 1206637058}
   - component: {fileID: 1206637057}
   - component: {fileID: 1206637056}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1699,7 @@ GameObject:
   - component: {fileID: 1322436755}
   - component: {fileID: 1322436754}
   - component: {fileID: 1322436753}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1866,7 +1866,7 @@ GameObject:
   - component: {fileID: 1550617148}
   - component: {fileID: 1550617147}
   - component: {fileID: 1550617146}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1952,6 +1952,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550617144}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1563574047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563574048}
+  - component: {fileID: 1563574049}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1563574048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563574047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1563574049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563574047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dab8fd35382dd54b8afe4507c858da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652792427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,7 +2005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1652792428}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: CAPSULE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1996,7 +2040,7 @@ GameObject:
   - component: {fileID: 1684202747}
   - component: {fileID: 1684202746}
   - component: {fileID: 1684202745}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Rode (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2094,7 +2138,7 @@ GameObject:
   - component: {fileID: 1766652736}
   - component: {fileID: 1766652735}
   - component: {fileID: 1766652734}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2109,7 +2153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766652732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.24, y: 6.6, z: 0.33}
+  m_LocalPosition: {x: -1.8097534, y: 9.151133, z: 5.172521}
   m_LocalScale: {x: 1.8725122, y: 1.8725122, z: 1.8725122}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2191,7 +2235,7 @@ GameObject:
   - component: {fileID: 1820431689}
   - component: {fileID: 1820431688}
   - component: {fileID: 1820431687}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2288,7 +2332,7 @@ GameObject:
   - component: {fileID: 1904403199}
   - component: {fileID: 1904403198}
   - component: {fileID: 1904403197}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2303,7 +2347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904403195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.93, y: -4.11, z: 0.43}
+  m_LocalPosition: {x: 1.8802464, y: -1.5588677, z: 5.272521}
   m_LocalScale: {x: 4.692451, y: 4.692451, z: 4.692451}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2385,7 +2429,7 @@ GameObject:
   - component: {fileID: 1944867546}
   - component: {fileID: 1944867545}
   - component: {fileID: 1944867544}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Ball (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2400,7 +2444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944867542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.24, y: 6.6, z: -5.61}
+  m_LocalPosition: {x: -1.8097534, y: 9.151133, z: -0.76747894}
   m_LocalScale: {x: 1.8725122, y: 1.8725122, z: 1.8725122}
   m_ConstrainProportionsScale: 0
   m_Children: []

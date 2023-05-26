@@ -145,17 +145,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement_speed: 2
   rotation_speed: 160
-  radius: 0.2
-  distance: 0.35
+  radius: 0.35
+  distance: 0.23
   groundMask:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 8
   wallDetectionLength: 0.03
-  wallRadius: 0.38
+  wallRadius: 0.5
   wallFront: 0
-  wallMask:
-    serializedVersion: 2
-    m_Bits: 72
 --- !u!114 &1377529831
 MonoBehaviour:
   m_ObjectHideFlags: 0
