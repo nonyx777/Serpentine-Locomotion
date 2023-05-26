@@ -1792,6 +1792,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
+      propertyPath: wallRadius
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377529830, guid: 13a9a031133a96505a346e657da9e83d, type: 3}
+      propertyPath: wallDetectionLength
+      value: 0.33
+      objectReference: {fileID: 0}
     - target: {fileID: 7957346470974027752, guid: 13a9a031133a96505a346e657da9e83d,
         type: 3}
       propertyPath: m_RootOrder
@@ -1996,6 +2004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dab8fd35382dd54b8afe4507c858da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frame_rate: 60
 --- !u!1 &1652792427
 GameObject:
   m_ObjectHideFlags: 0
