@@ -83,13 +83,15 @@ public class SerpentineMovement : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + (-transform.up * distance), radius);
 
         Gizmos.color = Color.green;
-        Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, -distance, transform.position.z));
+        Vector3 ground_direction = transform.TransformDirection(Vector3.up) * -distance;
+        Gizmos.DrawRay(transform.position, ground_direction);
 
         //wall detection gizmo
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position + transform.forward * wallDetectionLength, wallRadius);
 
         // Gizmos.color = Color.blue;
-        Gizmos.DrawRay(transform.position, new Vector3(transform.position.x, 0, wallDetectionLength));
+        Vector3 wall_direction = transform.TransformDirection(Vector3.forward) * wallDetectionLength;
+        Gizmos.DrawRay(transform.position, wall_direction);
     }
 }
